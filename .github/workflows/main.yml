@@ -2,7 +2,8 @@
 name: Hello
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 jobs:
   Greet:
     runs-on: ubuntu-letest
@@ -11,3 +12,8 @@ jobs:
         run: echo "Hello Dosto"
       - name: say hello to username
         run: echo "Hello $USER"
+details:
+  runs-on: ubuntu-letest
+  steps:
+    - name: show version of python,docker
+    - run: python --version && docker --version
