@@ -12,3 +12,4 @@ jobs:
           run : echo "Hello Dosto"
         - name : say hello to username
           run : echo "Hello $USER"
+#this is a example of how runers and jobs are running and working
