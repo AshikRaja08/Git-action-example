@@ -6,14 +6,16 @@ on:
       - main
 jobs:
   Greet:
-    runs-on: ubuntu-letest
+    runs-on: ubuntu-latest
     steps:
       - name: Say hello to user
         run: echo "Hello Dosto"
       - name: say hello to username
         run: echo "Hello $USER"
-details:
-  runs-on: ubuntu-letest
+        
+        
+ details:
+  runs-on: ubuntu-latest
   steps:
     - name: show version of python,docker
-    - run: python --version && docker --version
+      run: python --version && docker --version
