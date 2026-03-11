@@ -1,9 +1,17 @@
 name: CICD
 
 on:
-  push:
-    branches: [main]
-    paths: '**.yml'
+  workflow_dispatch:
+    inputs:
+      enviroments:
+        description: This is the enviroments value where this workflow runs
+        default: 'dev'
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
+          - test
 jobs:
 
   code:
