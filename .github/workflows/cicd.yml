@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        run: echo " code clone from github"
+        run: echo " code clone  from github"
   build:
     needs: [code]
     runs-on: ubuntu-latest
