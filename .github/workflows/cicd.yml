@@ -32,6 +32,7 @@ jobs:
       - name: test the file
         run: echo "testing the file"
   deploy:
+    if: inputs.enviroments == 'dev'
     needs: [build,test]
     runs-on: ubuntu-latest
     steps:
